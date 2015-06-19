@@ -12,10 +12,11 @@ All the files gathered in this folder provide a solution for the Coursera [Getti
 The script assumes a standard installation of R (tested on R v3.2.0). No additional packages are required.
 
 The script performs the following actions:
+
 1. If the zip file containing the HAR data set does not exist in the working directory, download it from the URL provided in the details section of the course project.
 1. If the data folder containing the original UCI files does not exist in the working directory, extract all the files from the zip archive. An alternative approach could be to extract only the necessary files using a connection.
 1. Merges the training and the test sets to create a full data set.
-1. Extracts only the measurements on the mean and standard deviation for each measurement. Here are selected both the mean() and meanFreq() variables. Should a narrower or wider definition be required, you have to adjust the regexp to select the correct variable names.
+1. Extracts only the measurements on the mean and standard deviation for each measurement. Here are selected both the *mean()* and *meanFreq()* variables. Should a narrower or wider definition be required, you have to adjust the regexp to select the correct variable names.
 1. Activity IDs are recoded as factors and labeled accordingly.
 1. Use original variable names to label the columns of the data sets.
 1. Creates a second data set with the averages of the measures contained in the *harDB* data frame grouped by subject id and activity type.
