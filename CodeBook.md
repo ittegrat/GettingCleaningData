@@ -8,11 +8,12 @@ By processing the *[UCI HAR Data Set](http://archive.ics.uci.edu/ml/datasets/Hum
 Furthermore, the harDB_m data frame is exported as a text file (**harDB_m.txt**) in the working directory.
 
 CONTENTS
-[UCI HAR Dataset](#UCIHAR)
-[**`harDB`** data frame](#harDB)
-[**`harDB_m`** data frame](#harDB_m)
-[Exported data](#export)
-[R Global Environment postcondition status](#postconditions)
+
+1. [UCI HAR Dataset](#UCIHAR)
+1. [**`harDB`** data frame](#harDB)
+1. [**`harDB_m`** data frame](#harDB_m)
+1. [Exported data](#export)
+1. [R Global Environment postcondition status](#postconditions)
 
 
 ## <a name="UCIHAR">UCI HAR Dataset</a>
