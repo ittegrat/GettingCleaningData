@@ -7,6 +7,7 @@ The aim of the R script **[run_analysis.R](../master/run_analysis.R)** provided 
 1. **harDB_m.txt**: a text file in the working directory containing the `harDB_m` data set
 
 Details on the HAR data set and on the process to create the two tidy data sets can be found in the [CodeBook.md](../master/CodeBook.md) file.
+For additional details, see also comments in the run_analysis.R script.
 
 ## Running The Script
 The script assumes a standard installation of R (tested on R v3.2.0). No additional packages are required.
