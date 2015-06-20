@@ -1,12 +1,12 @@
 # Getting and Cleaning Data Course Project
 ## Summary
-The aim of the R script **[run_analysis.R](../blob/master/run_analysis.R)** provided in this repository is to produce:
+The aim of the R script **[run_analysis.R](../master/run_analysis.R)** provided in this repository is to produce:
 
 1. **harDB**: a data frame in the R global environment containing a selection of the original measures for all the records included in the *[Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)*
 1. **harDB_m**: a data frame with the averages of the measures contained in the `harDB` data frame calculated grouping records by subject id and activity type
 1. **harDB_m.txt**: a text file in the working directory containing the `harDB_m` data set
 
-Details on the HAR data set and on the process to create the two tidy data sets can be found in the [CodeBook.md](../blob/master/CodeBook.md) file.
+Details on the HAR data set and on the process to create the two tidy data sets can be found in the [CodeBook.md](../master/CodeBook.md) file.
 
 ## Running The Script
 The script assumes a standard installation of R (tested on R v3.2.0). No additional packages are required.

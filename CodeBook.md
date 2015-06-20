@@ -1,6 +1,6 @@
 # CodeBook
 ## Summary
-By processing the *[UCI HAR Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)*, the script **run_analysis.R** creates two data sets:
+By processing the *[UCI HAR Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)*, the script **[run_analysis.R](../master/run_analysis.R)** creates two data sets:
 
 1. **harDB**: a data frame containing a selection of the original measures for all the records in the train and test sets
 1. **harDB_m**: a data frame with the averages of the measures contained in the `harDB` data frame calculated grouping records by subject id and activity type
