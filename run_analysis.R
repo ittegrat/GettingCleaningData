@@ -115,8 +115,7 @@ harDB[[2]] <- factor(harDB[[2]], labels=activities)
 #-----------------------------------------------------------
 
 # Assign names to data frame columns
-varNames <- c("SubjectID", "ActivityType", features[cols])
-names(harDB) <- varNames
+names(harDB) <- c("SubjectID", "ActivityType", features[cols])
 
 
 #  6. Creates the second data set with the average measures
@@ -140,7 +139,7 @@ harDB_lm <- lapply(
 harDB_m <- do.call(rbind, c(make.row.names=F, harDB_lm))
 
 # Reassign names to data frame columns
-names(harDB_m) <- varNames
+names(harDB_m) <- c("SubjectID", "ActivityType", paste0("avg-",features[cols]))
 
 # Order the data set by subject and activity type
 harDB_m <- harDB_m[order(harDB_m$SubjectID,harDB_m$ActivityType), ]
@@ -148,9 +147,13 @@ harDB_m <- harDB_m[order(harDB_m$SubjectID,harDB_m$ActivityType), ]
 # Export the data set to harDB_m.txt
 write.table(harDB_m, file="harDB_m.txt", row.names=F)
 
+# Export harDB_m variable names
+#VarMap <- data.frame(id=1:length(names(harDB_m)),VarName=names(harDB_m))
+#write.table(VarMap, file="VarMap.txt", row.names=F)
+
 #  7. Clean-up all intermediate variables
 #-----------------------------------------------------------
 rm(harURL,harZip,harDir)
-rm(activities,features,cols,varNames)
+rm(activities,features,cols)
 rm(harDB_l,harDB_lm)
 rm(get.dataset,get.names)
